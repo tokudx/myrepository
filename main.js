@@ -9,9 +9,11 @@ const addTasks = (task) => {
     const showItem = taskList.appendChild(listItem);
     showItem.innerHTML = task;
 
+    const checkButton = document.createElement('label');
+
     //タスクに削除ボタンを追加
     const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = 'Delete';
+    deleteButton.innerHTML = 'Done';
     listItem.appendChild(deleteButton);
 
     //削除ボタンをクリックし、イベントを発動（タスクが削除）
